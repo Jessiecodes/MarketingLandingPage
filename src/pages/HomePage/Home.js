@@ -1,13 +1,19 @@
 import React from 'react';
-import { homeObjOne } from './Data';
-import { InfoSection } from '../../components';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
+import { InfoSection, Pricing } from '../../components';
 
-const Home = () => {
-    return (
-        <>
-            <InfoSection {...homeObjOne} />
-        </>
-    )
+
+
+function Home() {
+  return (
+    <>
+      <InfoSection {...homeObjOne} />
+      <InfoSection {...homeObjThree} /> 
+      <Pricing />
+      <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjFour} />
+    </>
+  );
 }
 
-export default Home
+export default Home;
